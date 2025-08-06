@@ -50,6 +50,6 @@ def add_item():
     conn.close()
     return jsonify({'status': 'success'}), 201
 
-if __name__ == '__main__':
-    initialize_database()
-    app.run(host='0.0.0.0', port=8080)
+
+initialize_database()
+app.run(host='0.0.0.0', port=8080)
